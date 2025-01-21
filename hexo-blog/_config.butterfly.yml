@@ -14,19 +14,19 @@ nav:
   logo:
   display_title: true
   # Whether to fix navigation bar
-  fixed: false
+  fixed: true
 
 menu:
-  首頁: / || fas fa-home
-  時間軸: /archives/ || fas fa-archive
-  標籤: /tags/ || fas fa-tags
-  分類: /categories/ || fas fa-folder-open
-  清單||fa fa-heartbeat:
-  音樂: /music/ || fas fa-music
-  照片: /Gallery/ || fas fa-images
-  電影: /movies/ || fas fa-video
-  友鏈: /link/ || fas fa-link
-  關於: /about/ || fas fa-heart
+  Home: / || fas fa-home
+  Archives: /archives/ || fas fa-archive
+  Tags: /tags/ || fas fa-tags
+  Categories: /categories/ || fas fa-folder-open
+  # List||fas fa-list:
+    # Music: /music/ || fas fa-music
+    # Movie: /movies/ || fas fa-video
+  # Link: /link/ || fas fa-link
+  # About: /about/ || fas fa-heart
+
 
 
 
@@ -190,7 +190,7 @@ index_layout: 3
 # 3: auto_excerpt (default)
 # false: do not show the article introduction
 index_post_content:
-  method: 3
+  method: 2
   # If you set method to 2 or 3, the length need to config
   length: 500
 
@@ -200,8 +200,8 @@ index_post_content:
 
 toc:
   post: true
-  page: false
-  number: false
+  page: true
+  number: true
   expand: false
   # Only for post
   style_simple: true
@@ -229,7 +229,7 @@ reward:
 # Post edit
 # Easily browse and edit blog source code online.
 post_edit:
-  enable: true
+  enable: false
   # url: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name/
   # For example: https://github.com/jerryc127/butterfly.js.org/edit/main/source/
   url:
